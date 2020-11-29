@@ -13,4 +13,26 @@ class Letters{
         }
         return output
     }
+    fun tocamelCase (text:String): String{
+        val words = text.split(" ").toMutableList()
+        var output=""
+        for(w in words){
+            output += w.capitalize()
+        }
+        output = output.trim()
+        return output
+    }
+    fun toSnakeCase(text:String): String {
+        val words = text.split("").toMutableList()
+        var output=""
+        for(w in words.indices){
+            if(words[w]==" "){
+                output += "_"
+            }
+            else{
+                output += words[w]
+            }
+        }
+        return output
+    }
 }
