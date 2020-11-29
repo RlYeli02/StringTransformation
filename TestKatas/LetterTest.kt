@@ -5,9 +5,18 @@ import kotlin.test.assertEquals
 
 class LetterTest {
     @Test
-    fun Upper_case_shouldBe_UpperCase(){
+    fun tendencia_en_desarrollo_shouldBe_TendenciaEnDesarrollo(){
         val convert = Letters()
-        var actual = convert.toCamelCase("Upper case")
-        assertEquals("UpperCase", actual)
+        var actual = convert.toCamelCase("tendencia en desarrollo")
+        assertEquals("TendenciaEnDesarrollo", actual)
     }
+    @Test
+    fun pascal_case_shouldBe_PascalCase(){
+        val convert = Letters()
+        var actual = convert.toPascalCase("pascal case")
+        assertEquals("PascalCase", actual)
+    }
+
+
+
 }
