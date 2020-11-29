@@ -30,5 +30,11 @@ class LetterTest {
         var actual = convert.toSnakeCase("snake case")
         assertEquals("snake_case",actual  )
     }
+    @Test
+    fun upper_Case_shouldBe_upperCase(){
+        val convert = Letters()
+        var actual = convert.toPascalCase("upper case")
+        assertEquals("UpperCase",actual  )
+    }
 
 }
