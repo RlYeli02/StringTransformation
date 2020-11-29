@@ -36,5 +36,12 @@ class LetterTest {
         var actual = convert.toPascalCase("upper case")
         assertEquals("UpperCase",actual  )
     }
+    @Test
+    fun ___trim__n_shouldBE_trim__n(){
+        val convert = Letters()
+        var actual = convert.toTrim("   trim  n")
+        assertEquals("trim  n",actual  )
+    }
+    
 
 }

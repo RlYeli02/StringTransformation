@@ -44,4 +44,8 @@ class Letters{
         output = output.trim()
         return output
     }
+    fun toTrim (text:String): String {
+        val s = text.trim()
+        return s
+    }
 }
